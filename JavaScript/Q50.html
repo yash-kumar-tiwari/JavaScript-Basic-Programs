@@ -1,0 +1,20 @@
+<script>
+    var sum=0;
+    var num = prompt("Enter Number: ");
+    var temp=num;
+
+    // for(let i=1; i<num; i++)
+    // {
+    //     rem = num%10;
+    //     sum= sum +rem;
+    //     num=parseInt(num/10);
+    // }
+
+    while(num>0)
+    {
+        rem = num%10;
+        sum= sum +rem;
+        num=parseInt(num/10);
+    }
+    document.write("Sum: "+sum);
+</script>

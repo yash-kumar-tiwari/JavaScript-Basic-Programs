@@ -1,0 +1,19 @@
+<script>
+    var num, str;
+    num=prompt("Enter Numeric Value: ");
+
+    if(num>=65 && num<=90)
+    {
+     str=String.fromCharCode(num);
+    }
+    else if(num>=97 && num<=122)
+    {
+     str=String.fromCharCode(num);
+    }
+    else
+    {
+     document.write("<h2>Invalid String Input</h2>");
+    }
+
+    document.write("Character is "+str+"<br>");
+</script>

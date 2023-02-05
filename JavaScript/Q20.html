@@ -1,0 +1,30 @@
+<script>
+    //WAP for cross case conversion of single character string 
+    
+    var string ,num;
+    string=prompt("Enter String/Character to Check: ");
+    num=string.charCodeAt();
+    document.write("<h2>Before Conversion String s : "+string+"</h2>");
+    document.write("<h2>Character Code At : "+num+"</h2>");
+    if(num>=65 && num<=90)
+    {
+     document.write("<h2>Upper Case String</h2>");
+     num+=32;
+     string=String.fromCharCode(n);
+    }
+    else if(num>=97 && num<=122)
+    {
+     document.write("<h2>Lower Case String</h2>");
+     num-=32;
+     string=String.fromCharCode(n);
+    }
+    else
+    {
+     document.write("<h2>Invalid String Input</h2>");
+    }
+    
+    document.write("<h2>After Conversion String : "+string+"</h2>");
+    document.write("<h2>Character Code At : "+num+"</h2>");
+    
+    </script>
+    

@@ -1,0 +1,32 @@
+<script>
+    var m1=prompt("Enter Marks English: ");
+    var m2=prompt("Enter Marks Hindi: ");
+    var m3=prompt("Enter Marks Science: ");
+    var m4=prompt("Enter Marks Social Science: ");
+    var m5=prompt("Enter Marks Informatics Practices: ");
+    var per;
+    total=parseInt(m1)+parseInt(m2)+parseInt(m3)+parseInt(m4)+parseInt(m5);
+    per=((total)/500)*100;
+
+    document.write("Total Marks :"+500+"<br>");
+    document.write("Marks Obtained :"+total+"<br><br>");
+
+    document.write("Percentage : "+per+"<br>");    
+
+    if(per>=60)
+    {
+        document.write("Grade A<br>");    
+    }
+    else if(per>=50)
+    {
+        document.write("Grade B<br>");    
+    }
+    else if(per>=40)
+    {
+        document.write("Grade C<br>");    
+    }
+    else
+    {
+        document.write("Grade D<br>");    
+    }
+</script>

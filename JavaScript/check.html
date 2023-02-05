@@ -1,0 +1,57 @@
+<!-- Program to find simple interest using function with argument & with return type take input from user in text fields. -->
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <input type="text" id="p" name="p" placeholder="Enter Principle"><br><br>
+    <input type="text" id="r" name="r" placeholder="Enter Rate"><br><br>
+    <input type="text" id="t" name="t" placeholder="Enter Time"><br><br>
+    <button onclick="submit(p,r,t)">Submit</button>
+    </div>
+    <div>
+        <h1 id="si"></h1>
+    </div>
+    <script>
+
+            var p = document.getElementById("p").value;
+            var r = document.getElementById("r").value;
+            var t = document.getElementById("t").value;
+
+            document.write(parseFloat(p))
+            document.write(parseFloat(r))
+            document.write(parseFloat(t))
+            // var p = 10000;
+            // var r = 8;
+            // var t = 2; 
+
+        function submit(p,r,t){
+            let si=((p)*(r)*(t))/100;
+            // document.write(si);
+            return si;
+         
+        }
+        var result = submit(p,r,t);
+        // document.write(result);
+        //document.getElementById("si").innerHTML="Simple Interest is :"+result;
+        
+    </script>
+</body>
+</html>
+
+<!-- <script>
+    var p=1000;
+    var r=8;
+    var t=2;
+
+    function si(p,r,t)
+    {
+        let si = (p*r*t)/100;
+        return si;
+    }
+
+   result = si(p,r,t);
+
+   document.write(result)
+</script> -->

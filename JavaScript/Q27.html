@@ -1,0 +1,30 @@
+<script>
+    var num, rem, temp, rev=0, count=0;
+    num=prompt("Enter Number to Check: ");
+
+    temp=num;
+
+    while(num>0)
+    {
+        count++;
+        num=parseInt(num/10);
+    }
+
+    num=temp;
+
+    while(num>0)
+    {
+        rem=num%10;
+        rev=rev+Math.pow(rem, count);
+        num=parseInt(num/10);
+    }
+
+    if(rev==temp)
+    {
+        document.write("Armstrong");
+    }
+    else
+    {
+        document.write("Not Armstrong");
+    }
+</script>

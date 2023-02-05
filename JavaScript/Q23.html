@@ -1,0 +1,25 @@
+<script>
+{
+    var gross, net, basic, ta, da, pf;
+
+    basic=prompt("Enter Basic Salary of Employee : ");
+
+    ta = parseInt(basic / 10);
+    da = 500;
+    pf = (basic * 7.8) / 100;
+    gross = parseInt(basic) + parseInt(ta) + parseInt(da);
+    net = parseInt(gross) - parseInt(pf);
+    
+    document.write("<br>Payslip of the Employee is classified as follows<br>");
+    document.write("-------------------------------------------<br>");
+    document.write("Basic Salary:"+basic+"<br>");
+    document.write("Travel Allowance: "+ta+"<br>");
+    document.write("Dearness Allowance: "+da+"<br>");
+    document.write("-------------------------------------------<br>");
+    document.write("Gross Salary: "+gross+"<br>");
+    document.write("-------------------------------------------<br>");
+    document.write("Deductions:<br>Provident Fund: "+pf+"<br>");
+    document.write("-------------------------------------------<br>");
+    document.write("Net Salary: "+net+"<br>");
+}
+</script>

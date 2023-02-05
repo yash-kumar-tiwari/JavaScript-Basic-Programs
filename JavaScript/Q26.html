@@ -1,0 +1,22 @@
+<script>
+    var num, rem, temp, rev=0;
+    num=prompt("Enter Number to Check: ");
+
+    temp=num;
+
+    while(num>0)
+    {
+        rem=num%10;
+        rev=parseInt(rev*10)+rem;
+        num=parseInt(num/10);
+    }
+
+    if(rev==temp)
+    {
+        document.write("Palindrome");
+    }
+    else
+    {
+        document.write("Not Palindrome");
+    }
+</script>

@@ -1,0 +1,29 @@
+<script>
+    var h,e,ip;
+
+    h=prompt("Enter Marks in Hindi: ");
+    e=prompt("Enter Marks in English: ");
+    ip=prompt("Enter Marks in Informatics Practices: ");
+
+    total=parseInt(h)+parseInt(e)+parseInt(ip);
+
+    if(h>=75 && e>=75 && ip>=75)
+    {
+       if(total/3.0>=80.0)
+       {
+        document.write("Percentage: "+(total/3.0)+"<br>");
+        document.write("You Passed in Examination");
+       }
+       else
+       {
+        document.write("You Failed in Examination");
+       }
+    }
+    else
+       {
+        document.write("Percentage: "+(total/3.0)+"<br>");
+        document.write("You Failed in Examination");
+       }
+
+
+</script>

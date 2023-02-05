@@ -1,0 +1,47 @@
+<script>
+    var rs=4526,rem,n2000,n500,n200,n100,n50,n20,n10,c5,c2,c1;
+
+    document.write("----Currency Count----<br>");
+    document.write("Rupees: "+rs+"<br><br>");
+    
+    n2000=(rs/2000);
+    rs=rs%2000;
+    document.write("Notes of 2000: "+parseInt(n2000)+"<br>");
+
+    n500=(rs/500);
+    rs=rs%500;
+    document.write("Notes of 500: "+parseInt(n500)+"<br>");
+    
+    n200=(rs/200);
+    rs=rs%200;
+    document.write("Notes of 200: "+parseInt(n200)+"<br>");
+    
+    n100=(rs/100);
+    rs=rs%100;
+    document.write("Notes of 100: "+parseInt(n100)+"<br>");
+
+    n50=(rs/50);
+    rs=rs%50;
+    document.write("Notes of 50: "+parseInt(n50)+"<br>");
+
+    n20=(rs/20);
+    rs=rs%20;
+    document.write("Notes of 20: "+parseInt(n20)+"<br>");
+
+    n10=(rs/10);
+    rs=rs%10;
+    document.write("Notes of 10: "+parseInt(n10)+"<br>");
+
+    c5=(rs/5);
+    rs=rs%5;
+    document.write("Coins of 5: "+parseInt(c5)+"<br>");
+
+    c2=(rs/2);
+    rs=rs%2;
+    document.write("Coins of 2: "+parseInt(c2)+"<br>");
+
+    c1=(rs/1);
+    rs=rs%1;
+    document.write("Coins of 1: "+parseInt(c1)+"<br>");
+
+</script>

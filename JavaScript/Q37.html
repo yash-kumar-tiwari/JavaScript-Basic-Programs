@@ -1,0 +1,32 @@
+<script>
+    var last, current, unit;
+    last=prompt("Enter Last Month Units: ");
+    current=prompt("Enter Current Month Units: ");
+
+    unit=current-last;
+
+    if(unit>=0 && unit<=100)
+    {
+        document.write("Unit Consumed: "+unit+"<br>");
+        document.write("Rate per Unit: 2 Rs/Unit<br>");
+        document.write("Payable Amount: "+(unit*2.0)+"<br>");
+    }
+    else if(unit>=101 && unit<=200)
+    {
+        document.write("Unit Consumed: "+unit+"<br>");
+        document.write("Rate per Unit: 3 Rs/Unit<br>");
+        document.write("Payable Amount: "+(unit*3.0)+"<br>");
+    }
+    else if(unit>=201 && unit<=300)
+    {
+        document.write("Unit Consumed: "+unit+"<br>");
+        document.write("Rate per Unit: 4 Rs/Unit<br>");
+        document.write("Payable Amount: "+(unit*4.0)+"<br>");
+    }
+    else
+    {
+        document.write("Unit Consumed: "+unit+"<br>");
+        document.write("Rate per Unit: 5 Rs/Unit<br>");
+        document.write("Payable Amount: "+(unit*5.0)+"<br>");
+    }
+</script>

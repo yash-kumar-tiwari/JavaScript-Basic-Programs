@@ -1,0 +1,26 @@
+<script>
+    var num = parseInt(prompt("Enter Number: "));
+    var temp=num;
+    var count=0,rem,sum=0;
+
+    while(num>0)
+    {
+        count++;
+        num=parseInt(num/10);
+    }
+    num=temp;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+Math.pow(rem,count);
+        num=parseInt(num/10);
+    }
+
+    if(sum==temp)
+    {
+        document.write("Armstrong");
+    }
+    else
+        document.write("Not Armstrong");
+    
+</script>

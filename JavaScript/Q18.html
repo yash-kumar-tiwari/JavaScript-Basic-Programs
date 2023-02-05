@@ -1,0 +1,15 @@
+<script>
+    var num=prompt("Enter 4 Digit Number: ");
+    var f,l;
+
+    if(num>=1000 && num<=9999)
+    {
+
+    f=parseInt(num/1000);
+    l=num%10;
+
+    document.write("Sum of First and Last Digit of "+num+" is " +(f+l)+" <br>");
+    }
+    else
+    document.write("Please Enter Valid 4 Digit Number.");
+</script>
